@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8" />
+    <title>Products Form</title>
+</head>
+<body>
+
+<div th:insert="fragments/navbar.html :: navbar"></div>
+
+<div class="jumbotron">
+    <h1 class="display-4">New Task</h1>
+    <form id="newItemForm" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="newItemTitle">Title</label>
+            <input type="text" class="form-control" id="newItemTitle" name="newItemTitle">
+        </div>
+        <div class="form-group">
+            <label for="newItemDescription">Description</label>
+            <textarea type="text" class="form-control" id="newItemDescription" name="newItemDescription"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="newItemTargetDate">Target Date</label>
+            <input type="date" class="form-control" id="newItemTargetDate" name="newItemTargetDate"></input>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block">Save Item</button>
+    </form>
+</div> <!-- End of Form -->
+
+<script src="js/productController.js"></script>
+<script src="js/productForm.js"></script>
+
+<!--Bootstrap css -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</body>
+</html>
