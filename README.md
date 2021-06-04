@@ -1,5 +1,9 @@
 # SpringBootAssessment
 
+Name: Chan Yong Hoow
+
+Email: 2073951b@student.tp.edu.sg
+
     Qn. What did you like about this project?
 
         Ans: I can make use of what I learned in Spring Boot to apply it to this assessment.
